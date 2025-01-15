@@ -58,6 +58,7 @@ p{
     background-color: #da2ae6;
 }
 #portfolio {
+    margin-top: 3rem;
     margin-bottom: 5rem; /* Dodajemy odstęp na dole sekcji Portfolio */
 }
 
