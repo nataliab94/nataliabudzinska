@@ -10,8 +10,6 @@ html {
     color:white!important;
 }
 
-
-
 .text-bg-dark {
     background-color: black !important;
 }
@@ -69,4 +67,17 @@ footer{
 
 #skills{
     color: white;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+.fade-in-logo {
+    animation: fadeIn 2s ease-out forwards; 
+    opacity: 0; 
 }
