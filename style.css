@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#menu{
+    background:linear-gradient(#004aad, #da2ae6) !important;
+    color:white!important;
+}
+
+
+
+.text-bg-dark {
+    background-color: black !important;
+}
+
+h2{
+    color: white;   
+}
+
+
+button{
+    background-color:#da2ae6!important;
+}
+
+#about_me{
+    background-color: black;
+    
+}
+#about_me a{
+    background-color:#da2ae6!important;
+}
+
+.fw-bold{
+    color: white !important;
+}
+p{
+    color: white !important;
+}
+
+
+#footer .nav-link {
+    color: white !important; 
+}
+
+
+#contact{
+  
+    color:white; 
+}
+
+
+.icon{
+    border-radius: 20px;
+}
+
+#portfolio a{
+    background-color: #da2ae6;
+}
+#portfolio {
+    margin-bottom: 5rem; /* Dodajemy odstęp na dole sekcji Portfolio */
+}
+
+footer{
+    background:linear-gradient(#004aad, #da2ae6) !important;
+}
+
+#skills{
+    color: white;
+}
