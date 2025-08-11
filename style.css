@@ -131,8 +131,6 @@ footer{
     background-color: #000;
 }
 
-
-
 @media (max-width: 768px) {
     section.vh-100 {
         height: auto !important;
@@ -140,26 +138,37 @@ footer{
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-    /* Usuwamy wymuszanie pionowego wyśrodkowania */
+   
     section.vh-100.d-flex {
         align-items: flex-start !important;
     }
     #skills .carousel-inner,
     #portfolio .carousel-inner {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; 
     }
 
-    .carousel-control-prev {
-        left: 0;
+    
+    #skills .carousel-item,
+    #portfolio .carousel-item {
+        display: block;
+        opacity: 1 !important;
+        position: static;
+        transform: none !important;
+        transition: none !important;
     }
 
-    .carousel-control-next {
-        right: 0;
+    #skills .carousel-control-prev,
+    #skills .carousel-control-next,
+    #skills .carousel-indicators,
+    #portfolio .carousel-control-prev,
+    #portfolio .carousel-control-next,
+    #portfolio .carousel-indicators {
+        display: none !important;
     }
 }
 
-/* Karuzele - 1 element na najmniejszych ekranach */
 @media (max-width: 576px) {
     #skills .row-cols-2 {
         grid-template-columns: 1fr !important;
@@ -180,3 +189,4 @@ footer{
         padding: 0 1rem;
     }
 }
+
