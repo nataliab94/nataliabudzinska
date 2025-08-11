@@ -1,145 +1,3 @@
-body{
-    background-color: black;
-}
-html {
-    scroll-behavior: smooth;
-}
-
-#menu{
-    background:linear-gradient(#004aad, #da2ae6) !important;
-    color:white!important;
-}
-
-.text-bg-dark {
-    background-color: black !important;
-}
-
-h2{
-    color: white;   
-}
-
-#portfoliobutton{
-    background-color:#da2ae6!important;
-    border-color: #2e0831c6;
-}
-
-#about_me{
-    background-color: black;
-    
-}
-#about_me a{
-    background-color:#da2ae6!important;
-    border-color: #2e0831c6;
-}
-
-.fw-bold{
-    color: white !important;
-}
-
-p{
-    color: white !important;
-}
-
-#footer .nav-link {
-    color: white !important; 
-}
-
-#contact{
-    color:white; 
-}
-
-.icon{
-    border-radius: 20px;
-}
-
-#portfolio a{
-    background-color: #da2ae6;
-    border-color: #2e0831c6;
-}
-#portfolio {
-    margin-top: 3rem;
-    margin-bottom: 5rem; /* Dodajemy odstęp na dole sekcji Portfolio */
-}
-
-footer{
-    background:linear-gradient(#004aad, #da2ae6) !important;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 3rem;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none !important;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    z-index: 10;
-}
-
-.carousel-control-prev {
-    left: -3rem;
-}
-
-.carousel-control-next {
-    right: -3rem;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 1;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    color: white;
-}
-
-
-/* Strzałki karuzel - białe i widoczne */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 2rem;
-    height: 2rem;
-    background-color: transparent;
-    border: none;
-    filter: none;
-}
-
-/* Padding w karuzelach, żeby ikony nie były przy krawędzi */
-#skills .carousel-inner,
-#portfolio .carousel-inner {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-}
-
-/* Wskaźniki karuzeli – małe kropki */
-.carousel-indicators {
-    position: static;
-    margin-top: 1rem;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: white;
-    border: none;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    opacity: 0.5;
-    transition: opacity 0.3s ease, background-color 0.3s ease;
-}
-
-.carousel-indicators .active {
-    background-color: #000;
-}
-
-@media (max-width: 768px) {
-    section.vh-100 {
-        min-height: 100%;
-    }
-    #about_me .d-flex {
-        flex-direction: column;
-    }
-}
-
 @media (max-width: 768px) {
     section.vh-100 {
         height: auto !important;
@@ -147,38 +5,21 @@ footer{
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-   
+    /* Usuwamy wymuszanie pionowego wyśrodkowania */
     section.vh-100.d-flex {
         align-items: flex-start !important;
     }
-}
+    #skills .carousel-inner,
+    #portfolio .carousel-inner {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-@media (max-width: 576px) {
-    #skills .row-cols-2 {
-        grid-template-columns: 1fr !important;
+    .carousel-control-prev {
+        left: 0;
+    }
+
+    .carousel-control-next {
+        right: 0;
     }
 }
-
-
-@media (max-width: 576px) {
-    #about_me img {
-        max-width: 70%;
-    }
-}
-
-@media (max-width: 576px) {
-    #about_me .d-flex {
-        flex-direction: column;
-    }
-    #about_me .btn {
-        width: 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    #contact form {
-        padding: 0 1rem;
-    }
-}
-
-
