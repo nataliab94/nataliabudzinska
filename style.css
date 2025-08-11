@@ -1,4 +1,24 @@
+body{
+    background-color: black;
+}
+html {
+    scroll-behavior: smooth;
+}
 
+#menu{
+    background:linear-gradient(#004aad, #da2ae6) !important;
+    color:white!important;
+}
+
+.text-bg-dark {
+    background-color: black !important;
+}
+
+h2{
+    color: white;   
+}
+
+#portfoliobutton{
     background-color:#da2ae6!important;
     border-color: #2e0831c6;
 }
@@ -73,6 +93,7 @@ footer{
     color: white;
 }
 
+
 /* Strzałki karuzel - białe i widoczne */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -119,11 +140,6 @@ footer{
     }
 }
 
-/* Poprawiony selektor na prawidłowy */
-#skills h3 {
-    color: white; 
-}
-
 @media (max-width: 768px) {
     section.vh-100 {
         height: auto !important;
@@ -131,27 +147,25 @@ footer{
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-    /* Usuwamy wymuszanie pionowego wyśrodkowania */
+   
     section.vh-100.d-flex {
         align-items: flex-start !important;
     }
 }
 
-/* Karuzele - 1 element na najmniejszych ekranach */
 @media (max-width: 576px) {
     #skills .row-cols-2 {
         grid-template-columns: 1fr !important;
     }
 }
 
-/* Logo w About me mniejsze na małych ekranach */
+
 @media (max-width: 576px) {
     #about_me img {
         max-width: 70%;
     }
 }
 
-/* Przyciski w About me pionowo na wąskich ekranach */
 @media (max-width: 576px) {
     #about_me .d-flex {
         flex-direction: column;
@@ -161,10 +175,10 @@ footer{
     }
 }
 
-/* Formularz - padding po bokach */
 @media (max-width: 576px) {
     #contact form {
         padding: 0 1rem;
     }
 }
+
 
