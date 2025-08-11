@@ -68,14 +68,9 @@ footer{
 .carousel-control-next:hover {
     opacity: 1;
 }
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0L4.79.71 2.5 3l2.29 2.29L5.5 6 2 3z'/%3E%3C/svg%3E");
-    filter: none;
-}
-
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0l.71.71L5.5 3 3.21 5.29 2.5 6 7 3 2.5 0z'/%3E%3C/svg%3E");
-    filter: none;
+    color: white;
 }
 
 /* Strzałki karuzel - białe i widoczne */
@@ -172,3 +167,4 @@ footer{
         padding: 0 1rem;
     }
 }
+
