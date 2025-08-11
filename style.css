@@ -1,27 +1,4 @@
-body{
-    background-color: black;
-}
-html {
-    scroll-behavior: smooth;
-}
 
-#menu{
-    background:linear-gradient(#004aad, #da2ae6) !important;
-    color:white!important;
-}
-
-
-
-.text-bg-dark {
-    background-color: black !important;
-}
-
-h2{
-    color: white;   
-}
-
-
-#portfoliobutton{
     background-color:#da2ae6!important;
     border-color: #2e0831c6;
 }
@@ -43,17 +20,13 @@ p{
     color: white !important;
 }
 
-
 #footer .nav-link {
     color: white !important; 
 }
 
-
 #contact{
-  
     color:white; 
 }
-
 
 .icon{
     border-radius: 20px;
@@ -64,7 +37,6 @@ p{
     border-color: #2e0831c6;
 }
 #portfolio {
-
     margin-top: 3rem;
     margin-bottom: 5rem; /* Dodajemy odstęp na dole sekcji Portfolio */
 }
@@ -74,7 +46,7 @@ footer{
 }
 
 .carousel-control-prev,
-  .carousel-control-next {
+.carousel-control-next {
     width: 3rem;
     top: 50%;
     transform: translateY(-50%);
@@ -82,44 +54,54 @@ footer{
     opacity: 0.7;
     transition: opacity 0.3s ease;
     z-index: 10;
-  }
+}
 
-  .carousel-control-prev {
+.carousel-control-prev {
     left: -3rem;
-  }
+}
 
-  .carousel-control-next {
+.carousel-control-next {
     right: -3rem;
-  }
+}
 
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
     opacity: 1;
-  }
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.5 0L4.79.71 2.5 3l2.29 2.29L5.5 6 2 3z'/%3E%3C/svg%3E");
+    filter: none;
+}
 
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.5 0l.71.71L5.5 3 3.21 5.29 2.5 6 7 3 2.5 0z'/%3E%3C/svg%3E");
+    filter: none;
+}
+
+/* Strzałki karuzel - białe i widoczne */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     width: 2rem;
     height: 2rem;
     background-color: transparent;
-    filter: invert(0) brightness(0);
     border: none;
-  }
+    filter: none;
+}
 
-  /* Padding w karuzelach, żeby ikony nie były przy krawędzi */
-  #skills .carousel-inner,
-  #portfolio .carousel-inner {
+/* Padding w karuzelach, żeby ikony nie były przy krawędzi */
+#skills .carousel-inner,
+#portfolio .carousel-inner {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-  }
+}
 
-  /* Wskaźniki karuzeli – małe kropki */
-  .carousel-indicators {
+/* Wskaźniki karuzeli – małe kropki */
+.carousel-indicators {
     position: static;
     margin-top: 1rem;
-  }
+}
 
-  .carousel-indicators [data-bs-target] {
+.carousel-indicators [data-bs-target] {
     background-color: white;
     border: none;
     width: 10px;
@@ -127,25 +109,28 @@ footer{
     border-radius: 50%;
     opacity: 0.5;
     transition: opacity 0.3s ease, background-color 0.3s ease;
-  }
+}
 
-  .carousel-indicators .active {
+.carousel-indicators .active {
     background-color: #000;
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     section.vh-100 {
         min-height: 100%;
     }
     #about_me .d-flex {
         flex-direction: column;
+    }
 }
-  }
-  #skills h3{
-    color: white; 
-  }
 
-  @media (max-width: 768px) {
-           section.vh-100 {
+/* Poprawiony selektor na prawidłowy */
+#skills h3 {
+    color: white; 
+}
+
+@media (max-width: 768px) {
+    section.vh-100 {
         height: auto !important;
         min-height: auto !important;
         padding-top: 3rem;
@@ -155,39 +140,35 @@ footer{
     section.vh-100.d-flex {
         align-items: flex-start !important;
     }
-        }
+}
 
-        /* Karuzele - 1 element na najmniejszych ekranach */
-        @media (max-width: 576px) {
-            #skills .row-cols-2 {
-                grid-template-columns: 1fr !important;
-            }
-        }
+/* Karuzele - 1 element na najmniejszych ekranach */
+@media (max-width: 576px) {
+    #skills .row-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+}
 
-        /* Logo w About me mniejsze na małych ekranach */
-        @media (max-width: 576px) {
-            #about_me img {
-                max-width: 70%;
-            }
-        }
+/* Logo w About me mniejsze na małych ekranach */
+@media (max-width: 576px) {
+    #about_me img {
+        max-width: 70%;
+    }
+}
 
-        /* Przyciski w About me pionowo na wąskich ekranach */
-        @media (max-width: 576px) {
-            #about_me .d-flex {
-                flex-direction: column;
-            }
-            #about_me .btn {
-                width: 100%;
-            }
-        }
+/* Przyciski w About me pionowo na wąskich ekranach */
+@media (max-width: 576px) {
+    #about_me .d-flex {
+        flex-direction: column;
+    }
+    #about_me .btn {
+        width: 100%;
+    }
+}
 
-        /* Formularz - padding po bokach */
-        @media (max-width: 576px) {
-            #contact form {
-                padding: 0 1rem;
-            }
-        }
- 
-        }
- 
-
+/* Formularz - padding po bokach */
+@media (max-width: 576px) {
+    #contact form {
+        padding: 0 1rem;
+    }
+}
